@@ -321,7 +321,7 @@ This application generates diet and workout plans using AI and machine learning.
 
 ## 👤 Author
 
-**Dhaval Prajapati**
+**Sarswati**
 
 ---
 
