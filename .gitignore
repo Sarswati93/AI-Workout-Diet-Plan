@@ -1,0 +1,26 @@
+# API Keys
+users.db
+Api.txt
+Api-2.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pkl
+
+# Virtual Environment
+venv/
+.venv/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+Thumbs.db
+.DS_Store
+
+# Notes (optional — remove if you want to track these)
+Current-plan.txt
+Future-Improvement.txt

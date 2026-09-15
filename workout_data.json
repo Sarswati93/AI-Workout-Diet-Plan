@@ -1,0 +1,1228 @@
+{
+  "exercises": {
+    "weight_loss": {
+      "home": {
+        "push": [
+          {
+            "name": "Push-ups",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Chest"
+          },
+          {
+            "name": "Diamond Push-ups",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Triceps"
+          },
+          {
+            "name": "Pike Push-ups",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Shoulders"
+          },
+          {
+            "name": "Tricep Dips (Chair)",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Triceps"
+          },
+          {
+            "name": "Burpees",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Full Body"
+          }
+        ],
+        "pull": [
+          {
+            "name": "Towel Rows",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Back"
+          },
+          {
+            "name": "Superman Hold",
+            "sets": 3,
+            "reps": "",
+            "duration": "30s",
+            "rest": "45s",
+            "target_muscle": "Lower Back"
+          },
+          {
+            "name": "Reverse Snow Angels",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Upper Back"
+          },
+          {
+            "name": "Bicep Curl (Water Bottles)",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Biceps"
+          },
+          {
+            "name": "Plank Rows",
+            "sets": 3,
+            "reps": "10/side",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Back"
+          }
+        ],
+        "legs": [
+          {
+            "name": "Jump Squats",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Lunges",
+            "sets": 3,
+            "reps": "12/leg",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Glute Bridges",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Glutes"
+          },
+          {
+            "name": "Calf Raises",
+            "sets": 3,
+            "reps": "20",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Calves"
+          },
+          {
+            "name": "High Knees",
+            "sets": 3,
+            "reps": "",
+            "duration": "45s",
+            "rest": "30s",
+            "target_muscle": "Full Legs"
+          }
+        ],
+        "cardio": [
+          {
+            "name": "Jumping Jacks",
+            "sets": 3,
+            "reps": "",
+            "duration": "60s",
+            "rest": "30s",
+            "target_muscle": "Full Body"
+          },
+          {
+            "name": "Mountain Climbers",
+            "sets": 3,
+            "reps": "",
+            "duration": "45s",
+            "rest": "30s",
+            "target_muscle": "Core"
+          },
+          {
+            "name": "Spot Jogging",
+            "sets": 3,
+            "reps": "",
+            "duration": "60s",
+            "rest": "30s",
+            "target_muscle": "Cardio"
+          },
+          {
+            "name": "Skaters",
+            "sets": 3,
+            "reps": "20",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Legs"
+          },
+          {
+            "name": "Bicycle Crunches",
+            "sets": 3,
+            "reps": "20",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Core"
+          }
+        ],
+        "core": [
+          {
+            "name": "Plank",
+            "sets": 3,
+            "reps": "",
+            "duration": "45s",
+            "rest": "30s",
+            "target_muscle": "Core"
+          },
+          {
+            "name": "Leg Raises",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Lower Abs"
+          },
+          {
+            "name": "Russian Twists",
+            "sets": 3,
+            "reps": "20",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Obliques"
+          },
+          {
+            "name": "Dead Bug",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Core"
+          },
+          {
+            "name": "Flutter Kicks",
+            "sets": 3,
+            "reps": "",
+            "duration": "30s",
+            "rest": "30s",
+            "target_muscle": "Lower Abs"
+          }
+        ]
+      },
+      "gym": {
+        "push": [
+          {
+            "name": "Bench Press",
+            "sets": 4,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Chest"
+          },
+          {
+            "name": "Incline Dumbbell Press",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Upper Chest"
+          },
+          {
+            "name": "Overhead Press",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Shoulders"
+          },
+          {
+            "name": "Cable Flyes",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Chest"
+          },
+          {
+            "name": "Tricep Pushdown",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Triceps"
+          }
+        ],
+        "pull": [
+          {
+            "name": "Lat Pulldown",
+            "sets": 4,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Lats"
+          },
+          {
+            "name": "Seated Cable Row",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Back"
+          },
+          {
+            "name": "Face Pulls",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Rear Delts"
+          },
+          {
+            "name": "Barbell Curl",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Biceps"
+          },
+          {
+            "name": "Hammer Curl",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Biceps"
+          }
+        ],
+        "legs": [
+          {
+            "name": "Barbell Squat",
+            "sets": 4,
+            "reps": "10",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Leg Press",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Romanian Deadlift",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Hamstrings"
+          },
+          {
+            "name": "Leg Curl",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Hamstrings"
+          },
+          {
+            "name": "Calf Raises (Machine)",
+            "sets": 4,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Calves"
+          }
+        ],
+        "cardio": [
+          {
+            "name": "Treadmill HIIT",
+            "sets": 1,
+            "reps": "",
+            "duration": "20min",
+            "rest": "",
+            "target_muscle": "Cardio"
+          },
+          {
+            "name": "Rowing Machine",
+            "sets": 1,
+            "reps": "",
+            "duration": "15min",
+            "rest": "",
+            "target_muscle": "Full Body"
+          },
+          {
+            "name": "Battle Ropes",
+            "sets": 4,
+            "reps": "",
+            "duration": "30s",
+            "rest": "30s",
+            "target_muscle": "Arms/Core"
+          },
+          {
+            "name": "Elliptical",
+            "sets": 1,
+            "reps": "",
+            "duration": "15min",
+            "rest": "",
+            "target_muscle": "Cardio"
+          },
+          {
+            "name": "Box Jumps",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Legs"
+          }
+        ],
+        "core": [
+          {
+            "name": "Cable Crunch",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Abs"
+          },
+          {
+            "name": "Hanging Leg Raises",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Lower Abs"
+          },
+          {
+            "name": "Ab Wheel Rollout",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Core"
+          },
+          {
+            "name": "Woodchoppers",
+            "sets": 3,
+            "reps": "12/side",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Obliques"
+          },
+          {
+            "name": "Plank",
+            "sets": 3,
+            "reps": "",
+            "duration": "60s",
+            "rest": "30s",
+            "target_muscle": "Core"
+          }
+        ]
+      }
+    },
+    "maintenance": {
+      "home": {
+        "push": [
+          {
+            "name": "Push-ups",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Chest"
+          },
+          {
+            "name": "Wide Push-ups",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Chest"
+          },
+          {
+            "name": "Pike Push-ups",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Shoulders"
+          },
+          {
+            "name": "Tricep Dips (Chair)",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Triceps"
+          }
+        ],
+        "pull": [
+          {
+            "name": "Inverted Rows",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Back"
+          },
+          {
+            "name": "Superman Hold",
+            "sets": 3,
+            "reps": "",
+            "duration": "30s",
+            "rest": "45s",
+            "target_muscle": "Lower Back"
+          },
+          {
+            "name": "Bicep Curl (Resistance Band)",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Biceps"
+          },
+          {
+            "name": "Band Pull-Apart",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Upper Back"
+          }
+        ],
+        "legs": [
+          {
+            "name": "Bodyweight Squats",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Lunges",
+            "sets": 3,
+            "reps": "10/leg",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Glute Bridges",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Glutes"
+          },
+          {
+            "name": "Wall Sit",
+            "sets": 3,
+            "reps": "",
+            "duration": "45s",
+            "rest": "60s",
+            "target_muscle": "Quads"
+          }
+        ],
+        "cardio": [
+          {
+            "name": "Brisk Walking",
+            "sets": 1,
+            "reps": "",
+            "duration": "30min",
+            "rest": "",
+            "target_muscle": "Cardio"
+          },
+          {
+            "name": "Jumping Jacks",
+            "sets": 3,
+            "reps": "",
+            "duration": "45s",
+            "rest": "30s",
+            "target_muscle": "Full Body"
+          },
+          {
+            "name": "Spot Jogging",
+            "sets": 3,
+            "reps": "",
+            "duration": "60s",
+            "rest": "30s",
+            "target_muscle": "Cardio"
+          }
+        ],
+        "core": [
+          {
+            "name": "Plank",
+            "sets": 3,
+            "reps": "",
+            "duration": "30s",
+            "rest": "30s",
+            "target_muscle": "Core"
+          },
+          {
+            "name": "Crunches",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Abs"
+          },
+          {
+            "name": "Side Plank",
+            "sets": 2,
+            "reps": "",
+            "duration": "20s/side",
+            "rest": "30s",
+            "target_muscle": "Obliques"
+          }
+        ]
+      },
+      "gym": {
+        "push": [
+          {
+            "name": "Bench Press",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Chest"
+          },
+          {
+            "name": "Dumbbell Shoulder Press",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Shoulders"
+          },
+          {
+            "name": "Chest Flyes",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Chest"
+          },
+          {
+            "name": "Tricep Rope Pushdown",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Triceps"
+          }
+        ],
+        "pull": [
+          {
+            "name": "Lat Pulldown",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Lats"
+          },
+          {
+            "name": "Seated Row",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Back"
+          },
+          {
+            "name": "Dumbbell Curl",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Biceps"
+          },
+          {
+            "name": "Face Pulls",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Rear Delts"
+          }
+        ],
+        "legs": [
+          {
+            "name": "Leg Press",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Leg Curl",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Hamstrings"
+          },
+          {
+            "name": "Leg Extension",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Calf Raises",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Calves"
+          }
+        ],
+        "cardio": [
+          {
+            "name": "Treadmill Walk/Jog",
+            "sets": 1,
+            "reps": "",
+            "duration": "20min",
+            "rest": "",
+            "target_muscle": "Cardio"
+          },
+          {
+            "name": "Cycling",
+            "sets": 1,
+            "reps": "",
+            "duration": "15min",
+            "rest": "",
+            "target_muscle": "Cardio"
+          },
+          {
+            "name": "Elliptical",
+            "sets": 1,
+            "reps": "",
+            "duration": "15min",
+            "rest": "",
+            "target_muscle": "Cardio"
+          }
+        ],
+        "core": [
+          {
+            "name": "Cable Crunch",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "30s",
+            "target_muscle": "Abs"
+          },
+          {
+            "name": "Hanging Knee Raises",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Lower Abs"
+          },
+          {
+            "name": "Plank",
+            "sets": 3,
+            "reps": "",
+            "duration": "45s",
+            "rest": "30s",
+            "target_muscle": "Core"
+          }
+        ]
+      }
+    },
+    "muscle_gain": {
+      "home": {
+        "push": [
+          {
+            "name": "Decline Push-ups",
+            "sets": 4,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Upper Chest"
+          },
+          {
+            "name": "Diamond Push-ups",
+            "sets": 4,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Triceps"
+          },
+          {
+            "name": "Handstand Push-ups (Wall)",
+            "sets": 3,
+            "reps": "8",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Shoulders"
+          },
+          {
+            "name": "Archer Push-ups",
+            "sets": 3,
+            "reps": "8/side",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Chest"
+          },
+          {
+            "name": "Tricep Dips (Chair)",
+            "sets": 4,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Triceps"
+          }
+        ],
+        "pull": [
+          {
+            "name": "Pull-ups (Door Bar)",
+            "sets": 4,
+            "reps": "8",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Lats"
+          },
+          {
+            "name": "Chin-ups",
+            "sets": 3,
+            "reps": "8",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Biceps/Back"
+          },
+          {
+            "name": "Inverted Rows",
+            "sets": 4,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Back"
+          },
+          {
+            "name": "Bicep Curl (Heavy Bag)",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Biceps"
+          },
+          {
+            "name": "Back Extensions",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Lower Back"
+          }
+        ],
+        "legs": [
+          {
+            "name": "Pistol Squats (Assisted)",
+            "sets": 3,
+            "reps": "6/leg",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Bulgarian Split Squat",
+            "sets": 4,
+            "reps": "10/leg",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Single Leg Glute Bridge",
+            "sets": 3,
+            "reps": "12/leg",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Glutes"
+          },
+          {
+            "name": "Calf Raises (Elevated)",
+            "sets": 4,
+            "reps": "20",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Calves"
+          },
+          {
+            "name": "Wall Squat Hold",
+            "sets": 3,
+            "reps": "",
+            "duration": "45s",
+            "rest": "60s",
+            "target_muscle": "Quads"
+          }
+        ],
+        "core": [
+          {
+            "name": "Ab Wheel Rollout",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Core"
+          },
+          {
+            "name": "Hanging Leg Raises (Bar)",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Lower Abs"
+          },
+          {
+            "name": "Dragon Flags",
+            "sets": 3,
+            "reps": "6",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Core"
+          },
+          {
+            "name": "Side Plank",
+            "sets": 3,
+            "reps": "",
+            "duration": "30s/side",
+            "rest": "30s",
+            "target_muscle": "Obliques"
+          }
+        ]
+      },
+      "gym": {
+        "push": [
+          {
+            "name": "Barbell Bench Press",
+            "sets": 4,
+            "reps": "8",
+            "duration": "",
+            "rest": "120s",
+            "target_muscle": "Chest"
+          },
+          {
+            "name": "Incline Dumbbell Press",
+            "sets": 4,
+            "reps": "10",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Upper Chest"
+          },
+          {
+            "name": "Military Press",
+            "sets": 4,
+            "reps": "8",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Shoulders"
+          },
+          {
+            "name": "Weighted Dips",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Chest/Triceps"
+          },
+          {
+            "name": "Skull Crushers",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Triceps"
+          }
+        ],
+        "pull": [
+          {
+            "name": "Deadlift",
+            "sets": 4,
+            "reps": "6",
+            "duration": "",
+            "rest": "120s",
+            "target_muscle": "Back/Hamstrings"
+          },
+          {
+            "name": "Weighted Pull-ups",
+            "sets": 4,
+            "reps": "8",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Lats"
+          },
+          {
+            "name": "Barbell Row",
+            "sets": 4,
+            "reps": "8",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Back"
+          },
+          {
+            "name": "Preacher Curl",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Biceps"
+          },
+          {
+            "name": "Face Pulls",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Rear Delts"
+          }
+        ],
+        "legs": [
+          {
+            "name": "Barbell Squat",
+            "sets": 4,
+            "reps": "8",
+            "duration": "",
+            "rest": "120s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Romanian Deadlift",
+            "sets": 4,
+            "reps": "8",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Hamstrings"
+          },
+          {
+            "name": "Hack Squat",
+            "sets": 3,
+            "reps": "10",
+            "duration": "",
+            "rest": "90s",
+            "target_muscle": "Quads"
+          },
+          {
+            "name": "Leg Curl",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "60s",
+            "target_muscle": "Hamstrings"
+          },
+          {
+            "name": "Standing Calf Raises",
+            "sets": 4,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Calves"
+          }
+        ],
+        "core": [
+          {
+            "name": "Cable Woodchoppers",
+            "sets": 3,
+            "reps": "12/side",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Obliques"
+          },
+          {
+            "name": "Weighted Decline Crunch",
+            "sets": 3,
+            "reps": "15",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Abs"
+          },
+          {
+            "name": "Hanging Leg Raises",
+            "sets": 3,
+            "reps": "12",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Lower Abs"
+          },
+          {
+            "name": "Pallof Press",
+            "sets": 3,
+            "reps": "10/side",
+            "duration": "",
+            "rest": "45s",
+            "target_muscle": "Core"
+          }
+        ]
+      }
+    }
+  },
+  "schedules": {
+    "beginner": [
+      {
+        "day": "Day1",
+        "label": "Full Body A",
+        "types": [
+          "push",
+          "legs",
+          "core"
+        ]
+      },
+      {
+        "day": "Day2",
+        "label": "Rest Day",
+        "types": []
+      },
+      {
+        "day": "Day3",
+        "label": "Full Body B",
+        "types": [
+          "pull",
+          "legs",
+          "core"
+        ]
+      },
+      {
+        "day": "Day4",
+        "label": "Rest Day",
+        "types": []
+      },
+      {
+        "day": "Day5",
+        "label": "Cardio & Core",
+        "types": [
+          "cardio",
+          "core"
+        ]
+      },
+      {
+        "day": "Day6",
+        "label": "Full Body C",
+        "types": [
+          "push",
+          "pull",
+          "legs"
+        ]
+      },
+      {
+        "day": "Day7",
+        "label": "Rest Day",
+        "types": []
+      }
+    ],
+    "intermediate": [
+      {
+        "day": "Day1",
+        "label": "Push Day",
+        "types": [
+          "push",
+          "core"
+        ]
+      },
+      {
+        "day": "Day2",
+        "label": "Pull Day",
+        "types": [
+          "pull",
+          "core"
+        ]
+      },
+      {
+        "day": "Day3",
+        "label": "Leg Day",
+        "types": [
+          "legs",
+          "core"
+        ]
+      },
+      {
+        "day": "Day4",
+        "label": "Rest Day",
+        "types": []
+      },
+      {
+        "day": "Day5",
+        "label": "Upper Body",
+        "types": [
+          "push",
+          "pull"
+        ]
+      },
+      {
+        "day": "Day6",
+        "label": "Lower Body & Cardio",
+        "types": [
+          "legs",
+          "cardio"
+        ]
+      },
+      {
+        "day": "Day7",
+        "label": "Rest Day",
+        "types": []
+      }
+    ],
+    "advanced": [
+      {
+        "day": "Day1",
+        "label": "Push Day",
+        "types": [
+          "push"
+        ]
+      },
+      {
+        "day": "Day2",
+        "label": "Pull Day",
+        "types": [
+          "pull"
+        ]
+      },
+      {
+        "day": "Day3",
+        "label": "Leg Day",
+        "types": [
+          "legs"
+        ]
+      },
+      {
+        "day": "Day4",
+        "label": "Push & Core",
+        "types": [
+          "push",
+          "core"
+        ]
+      },
+      {
+        "day": "Day5",
+        "label": "Pull & Core",
+        "types": [
+          "pull",
+          "core"
+        ]
+      },
+      {
+        "day": "Day6",
+        "label": "Legs & Cardio",
+        "types": [
+          "legs",
+          "cardio"
+        ]
+      },
+      {
+        "day": "Day7",
+        "label": "Rest Day",
+        "types": []
+      }
+    ]
+  }
+}

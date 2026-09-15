@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Workout & Diet Planner</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="bg-layer"></div>
+
+    <div class="container main-container py-5">
+        <div class="row w-100 justify-content-center">
+            <div class="col-lg-8 col-md-10">
+                <div class="glass-card text-white">
+                    <div class="text-center mb-5">
+                        <h1 class="fw-bold neon-text display-5">AI Workout & Diet Planner</h1>
+                        <p class="text-light opacity-75 fs-5">Personalized Indian meal plans & workout schedules
+                            tailored to your body and goals.</p>
+                    </div>
+
+                    <form id="dietForm">
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Age</label>
+                                <input type="number" class="form-control glass-input" id="age" required min="15"
+                                    max="100" placeholder="e.g. 25">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Gender</label>
+                                <select class="form-select glass-input" id="gender" required>
+                                    <option value="" disabled selected>Select Gender</option>
+                                    <option value="1">Male</option>
+                                    <option value="0">Female</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Height (cm)</label>
+                                <input type="number" class="form-control glass-input" id="height" required min="100"
+                                    max="250" placeholder="e.g. 170">
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Weight (kg)</label>
+                                <input type="number" class="form-control glass-input" id="weight" required min="30"
+                                    max="200" placeholder="e.g. 70">
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Activity Level</label>
+                                <select class="form-select glass-input" id="activity_level" required>
+                                    <option value="0">Sedentary (Little/no exercise)</option>
+                                    <option value="1">Lightly Active (Exercise 1-3 days/wk)</option>
+                                    <option value="2">Moderately Active (Exercise 3-5 days/wk)</option>
+                                    <option value="3">Active (Exercise 6-7 days/wk)</option>
+                                    <option value="4">Very Active (Hard exercise/physical job)</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Fitness Goal</label>
+                                <select class="form-select glass-input" id="fitness_goal" required>
+                                    <option value="0">Weight Loss</option>
+                                    <option value="1">Maintenance</option>
+                                    <option value="2">Weight Gain / Muscle Gain</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Diet Preference</label>
+                                <select class="form-select glass-input" id="diet_type" required>
+                                    <option value="Vegetarian">Vegetarian</option>
+                                    <option value="Eggetarian">Eggetarian</option>
+                                    <option value="NonVeg">Non-Vegetarian</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Health Condition</label>
+                                <select class="form-select glass-input" id="health_condition">
+                                    <option value="None">None</option>
+                                    <option value="Diabetes">Diabetes</option>
+                                    <option value="PCOS">PCOS</option>
+                                    <option value="Thyroid">Thyroid</option>
+                                    <option value="Hypertension">Hypertension</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Workout Experience</label>
+                                <select class="form-select glass-input" id="workout_experience" required>
+                                    <option value="beginner">Beginner</option>
+                                    <option value="intermediate">Intermediate</option>
+                                    <option value="advanced">Advanced</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-semibold">Workout Location</label>
+                                <select class="form-select glass-input" id="workout_location" required>
+                                    <option value="home">🏠 Home</option>
+                                    <option value="gym">🏋️ Gym</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="text-center mt-5">
+                            <button type="submit" class="btn btn-neon w-100 fw-bold py-3" id="submitBtn">Generate My
+                                Plan</button>
+                        </div>
+                    </form>
+
+                    <!-- Loader UI -->
+                    <div id="loader" class="d-none text-center mt-5">
+                        <div class="spinner-border text-info" style="width: 3rem; height: 3rem;" role="status">
+                            <span class="visually-hidden">Loading...</span>
+                        </div>
+                        <h4 class="mt-3 text-info fw-semibold neon-text">Analyzing your profile & generating your
+                            personalized plan...</h4>
+                        <p class="text-light opacity-75">This usually takes about 5-10 seconds using AI magic.</p>
+                    </div>
+
+                    <div id="errorMessage"
+                        class="d-none alert border-danger bg-transparent text-danger mt-4 text-center glass-card py-3">
+                    </div>
+
+                    <!-- Disclaimer -->
+                    <div class="disclaimer mt-5">
+                        <div class="disclaimer-header">⚠️ DISCLAIMER</div>
+                        <p><em>Note: Nutritional predictions and workout plans are based on machine learning algorithms
+                                and general fitness guidelines. This tool does not replace professional medical,
+                                nutritional, or fitness advice. Always consult a qualified healthcare provider or
+                                certified trainer before making significant changes to your diet or exercise
+                                routine.</em></p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+
+</html>

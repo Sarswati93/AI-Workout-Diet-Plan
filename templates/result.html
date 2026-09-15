@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your AI Workout & Diet Plan — 7 Day Plan</title>
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="bg-layer"></div>
+
+    <div class="container py-5 d-none" id="resultContainer">
+        <div class="glass-card text-white mx-auto" style="max-width: 1100px;">
+
+            <!-- Disclaimer Banner -->
+            <div class="disclaimer mb-4">
+                <div class="disclaimer-header" style="color: #f59e0b; text-align: center;">⚠️ Medical Disclaimer</div>
+                <p>This AI-generated plan is provided for informational and educational purposes only and is not
+                    intended as medical, nutritional, or fitness advice. Before starting any new diet or exercise plan,
+                    especially if you have health conditions, please consult a certified professional.
+                    The creators of this application are not responsible for any consequences resulting
+                    from following this plan.</p>
+            </div>
+
+            <div class="d-flex justify-content-between align-items-center mb-4 flex-wrap gap-3">
+    <h2 class="fw-bold neon-text mb-0">Your 7-Day Plan</h2>
+
+    <div class="d-flex gap-2 flex-wrap">
+        <button class="btn btn-pdf rounded-pill px-4" id="downloadPdfBtn">
+            📄 Download PDF
+        </button>
+
+        <a href="/" class="btn btn-outline-info rounded-pill px-4">
+            Create New Plan
+        </a>
+
+        <a href="{{ url_for('logout') }}" class="btn btn-danger rounded-pill px-4">
+            🚪 Logout
+        </a>
+    </div>
+</div>
+
+            <!-- User Info Badges -->
+            <div class="d-flex flex-wrap gap-2 mb-4" id="userInfoBadges"></div>
+
+            <!-- Metrics Section -->
+            <h5 class="text-info mb-3 ps-1 fw-semibold">Estimated Daily Requirements</h5>
+            <div class="row g-3 mb-5">
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="metric-badge">
+                        <div class="text-light opacity-75 small text-uppercase" style="letter-spacing: 1px;">BMI</div>
+                        <div class="metric-value fs-4" id="val-bmi">--</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="metric-badge" style="border-color: rgba(34, 197, 94, 0.3);">
+                        <div class="text-light opacity-75 small text-uppercase" style="letter-spacing: 1px;">BMR</div>
+                        <div class="metric-value fs-4" style="color: #22c55e;" id="val-bmr">--</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="metric-badge" style="border-color: rgba(236, 72, 153, 0.3);">
+                        <div class="text-light opacity-75 small text-uppercase" style="letter-spacing: 1px;">TDEE</div>
+                        <div class="metric-value fs-4" style="color: #ec4899;" id="val-tdee">--</div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg">
+                    <div class="metric-badge">
+                        <div class="text-light opacity-75 small text-uppercase" style="letter-spacing: 1px;">Calories
+                        </div>
+                        <div class="metric-value fs-4" id="val-cals">--</div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-lg">
+                    <div class="metric-badge" style="border-color: rgba(168, 85, 247, 0.3);">
+                        <div class="text-light opacity-75 small text-uppercase" style="letter-spacing: 1px;">Protein
+                        </div>
+                        <div class="metric-value fs-5" style="color: #a855f7;" id="val-pro">--</div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-lg">
+                    <div class="metric-badge" style="border-color: rgba(236, 72, 153, 0.3);">
+                        <div class="text-light opacity-75 small text-uppercase" style="letter-spacing: 1px;">Carbs</div>
+                        <div class="metric-value fs-5" style="color: #ec4899;" id="val-car">--</div>
+                    </div>
+                </div>
+                <div class="col-4 col-md-4 col-lg">
+                    <div class="metric-badge" style="border-color: rgba(245, 158, 11, 0.3);">
+                        <div class="text-light opacity-75 small text-uppercase" style="letter-spacing: 1px;">Fat</div>
+                        <div class="metric-value fs-5" style="color: #f59e0b;" id="val-fat">--</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diet Plan Section -->
+            <h5 class="text-info mb-3 ps-1 fw-semibold">🍽️ Weekly Diet Schedule</h5>
+            <div class="day-tabs mb-4" id="dayTabs"></div>
+            <div id="dayContents"></div>
+
+            <!-- Workout Plan Section -->
+            <div class="workout-section mt-5" id="workoutSection">
+                <h5 class="text-info mb-3 ps-1 fw-semibold">💪 Weekly Workout Schedule</h5>
+                <div class="day-tabs mb-4" id="workoutDayTabs"></div>
+                <div id="workoutDayContents"></div>
+            </div>
+
+            <!-- Shopping List Section -->
+            <div class="shopping-list-section mt-5" id="shoppingListSection" style="display: none;">
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <h5 class="text-info mb-0 ps-1 fw-semibold">🛒 Weekly Shopping List</h5>
+                    <button class="btn btn-outline-info btn-sm rounded-pill px-3" id="toggleShoppingList">Show
+                        List</button>
+                </div>
+                <div id="shoppingListContent" style="display: none;"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <!-- AI FITNESS CHATBOT -->
+<button id="aiChatOpen" class="ai-chat-open" title="AI Fitness Assistant">🤖</button>
+
+<div id="aiChatbot" class="ai-chatbot">
+
+    <div class="ai-chat-header">
+        <div>
+            <div class="ai-chat-title">🤖 AI Fitness Assistant</div>
+            <div class="ai-chat-status">● Online</div>
+        </div>
+
+        <button id="aiChatClose" class="ai-chat-close">×</button>
+    </div>
+
+    <div id="aiChatMessages" class="ai-chat-messages">
+        <div class="ai-message bot-message">
+            <div class="message-avatar">🤖</div>
+            <div class="message-text">
+                Hi! 👋 I'm your AI Fitness Assistant.
+                <br><br>
+                Ask me about your diet, workout, calories, macros or fitness plan.
+            </div>
+        </div>
+    </div>
+
+    <div class="ai-quick-questions">
+        <button class="quick-question">🥗 Food alternatives</button>
+        <button class="quick-question">💪 Beginner exercises</button>
+        <button class="quick-question">🔥 Explain my calories</button>
+    </div>
+
+    <div class="ai-chat-input-area">
+        <textarea id="aiChatInput"
+                  placeholder="Ask your fitness question..."
+                  rows="1"></textarea>
+        <button id="aiChatSend" class="ai-chat-send">➤</button>
+    </div>
+
+</div>
+
+<script src="{{ url_for('static', filename='js/chatbot.js') }}"></script>
+
+
+</body>
+
+</html>
